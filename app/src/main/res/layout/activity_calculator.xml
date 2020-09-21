@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".Calculator">
+
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/Calculator"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_inputData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/inputData"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title" />
+
+    <Switch
+        android:id="@+id/switch_gender"
+        android:layout_width="178dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:showText="true"
+        android:splitTrack="false"
+        android:text="Пол:"
+        android:textOff="@string/sex_male"
+        android:textOn="@string/sex_female"
+        android:textSize="18sp"
+        android:track="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_inputData"
+        tools:checked="false" />
+
+    <Switch
+        android:id="@+id/switch_race"
+        android:layout_width="272dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:autoText="false"
+        android:checked="false"
+        android:cursorVisible="false"
+        android:showText="true"
+        android:splitTrack="true"
+        android:text="Раса:"
+        android:textOff="Европеоидная"
+        android:textOn="Негроидная"
+        android:textSize="18sp"
+        android:track="@android:color/holo_blue_dark"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_gender"
+        tools:checked="false" />
+
+    <EditText
+        android:id="@+id/input_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/age"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_race" />
+
+    <EditText
+        android:id="@+id/input_kreatin"
+        android:layout_width="205dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/kreatinin"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_age" />
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="176dp"
+        android:layout_height="44dp"
+        android:text="@string/yourResult"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_calc"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <Button
+        android:id="@+id/button_calc"
+        android:layout_width="190dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_kreatin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

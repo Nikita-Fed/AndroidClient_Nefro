@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ПОЧКИ.РУ</string>
+    <string name="Registration">Регистрация</string>
+    <string name="toApp">Авторизация</string>
+    <string name="connection_to_base">"http://192.168.0.162"</string>
+    <string name="Calculator">Калькулятор</string>
+    <string name="Register">Зарегистрироваться</string>
+    <string name="inputEmail">Введите Вашу почту</string>
+    <string name="inputPass">Введите Ваш пароль</string>
+    <string name="title_activity_tourism">Map</string>
+    <string name="inputData">Ввод данных:</string>
+    <string name="PersonalOffice">Личный кабинет</string>
+    <string name="sex">Пол:</string>
+    <string name="sex_male">Муж.</string>
+    <string name="sex_female">Жен.</string>
+    <string name="age">Возраст</string>
+    <string name="firstName">Имя</string>
+    <string name="secondName">Фамилия</string>
+    <string name="saveData">Сохранить</string>
+    <string name="kreatinin">Уровень креатинина в мкмол/л</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="yourResult">Ваш результат:</string>
+    <string name="guide">Справочник</string>
+    <string name="foodBasket">Продуктовая корзина</string>
+    <string name="map">Карта</string>
+</resources>
